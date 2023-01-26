@@ -76,4 +76,10 @@ public class UserServiceImpl implements UserService {
         //change the isDeleted field to true
         //save the object in the db
     }
+
+    @Override
+    public List<UserDTO> listAllByRole(String role) {
+
+        List<User> users = userRepository.
+    }
 }
