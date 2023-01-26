@@ -38,6 +38,9 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public void save(ProjectDTO dto) {
 
+        Project project = projectMapper.convertToEntity(dto);
+        projectRepository.save(project);
+
     }
 
     @Override
